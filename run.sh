@@ -1,3 +1,3 @@
 #!/bin/sh
-sh /duckdns_update.sh
+sh /duckdns.sh
 crond -f
