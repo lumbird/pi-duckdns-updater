@@ -4,10 +4,6 @@ FROM alpine:latest
 # Install curl
 RUN apk --no-cache add curl
 
-# Set environment variables
-ENV DOMAIN=mydomain \
-    TOKEN=aaaabbbb-cccc-4444-8888-ddeeff001122
-
 # Copy the script into the image
 COPY duckdns_update.sh /duckdns_update.sh
 
