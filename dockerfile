@@ -18,4 +18,4 @@ RUN chmod +x /duckdns_update.sh
 RUN echo "*/10 * * * * /duckdns_update.sh >/dev/null 2>&1" > /etc/crontabs/root
 
 # Start cron
-CMD ["crond", "-f"]
+CMD /duckdns_update.sh && crond -f
